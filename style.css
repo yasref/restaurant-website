@@ -18,6 +18,10 @@
     width: 50%;
     display: inline-block;
 }
+.width-25{
+    width: 25%;
+    display: inline-block;
+}
 .gap30{
     gap: 30px;
 }
@@ -48,6 +52,10 @@ h2{
 h3{
     font-size: 22px;
     margin-bottom: 15px;
+}
+h4{
+    font-size: 16px;
+    padding: 10px;
 }
 /* header */
 header{
@@ -146,4 +154,34 @@ header ul  {
  .s3 a {
      padding: 30px;
      background-color:  #F9FAFC;
+ }
+ /* s4 */
+.s4 a{
+    cursor: pointer;
+    overflow: hidden;
+}
+.s4 img{
+     width: 100%;
+}
+.s4 a:hover img{
+    transform: scale(1.05);
+    transition:0.3s ease-in-out;
+ }
+ .s4 .info{
+     background-color: #f9fafc;
+     justify-content:  space-between;
+     margin-top: -3px;
+ }
+  .s4 span{
+     background-color: #F5C332;
+     justify-content:  space-between;
+     display: inline-block;
+     width: 60px;
+     height: 60px;
+    font-size: 24px;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
  }
