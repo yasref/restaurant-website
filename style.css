@@ -167,12 +167,12 @@ header ul  {
     transform: scale(1.05);
     transition:0.3s ease-in-out;
  }
- .s4 .info{
+.s4 .info{
      background-color: #f9fafc;
      justify-content:  space-between;
      margin-top: -3px;
  }
-  .s4 span{
+.s4 span{
      background-color: #F5C332;
      justify-content:  space-between;
      display: inline-block;
@@ -185,3 +185,26 @@ header ul  {
     justify-content: center;
     align-items: center;
  }
+footer{
+     margin-top: 180px;
+     justify-content: space-between;
+     padding: 20px;
+     border-top: 1px solid #eee;
+ }
+footer > div > div{
+     flex: 1;
+ }
+footer ul a{
+    color: black;
+    transition: 0.2s ease-in-out;
+ }
+footer ul a:hover{
+    color: #F5C332;
+ }
+ footer img{
+    width: 40px;
+}
+.copy{
+    color: #6F6F87;
+    text-align: right;
+}
