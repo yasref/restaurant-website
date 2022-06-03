@@ -9,6 +9,15 @@
     margin: 0 auto;
     max-width: 1170px;
 }
+.fx-row{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+}
+.width-50{
+    width: 50%;
+    display: inline-block;
+}
 button{
     background-color: #F5C332;
     border: none;
@@ -19,6 +28,9 @@ button i {
 }
 ul{
     list-style: none;
+}
+section{
+    padding: 60px 0;
 }
 
 /* header */
@@ -56,4 +68,31 @@ header ul li {
 }
 header ul  { 
     display: flex;
+}
+/* s1 */
+.s1{
+    margin-top: 80px;
+}
+.s1 h1{
+    font-size:72px;
+    letter-spacing:-1px;
+    color: #303030;
+}
+.s1 button {
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.s1 img{
+    width: 100%;
+}
+.s1::after{
+    content: '';
+    height: 40vw;
+    width: 300%;
+    background-color: #F9FAFC;
+    position: absolute;
+    top: 500px;
+    left: -100%;
+    transform: rotate(-30deg);
+    z-index: -1;
 }
