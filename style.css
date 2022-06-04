@@ -28,22 +28,17 @@ body {
     overflow-x: hidden;
 }
 .container {
-    margin: 0 auto;
-    max-width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .fx-row{
     display:flex;
     flex-direction: row;
     align-items:center;
 }
-.width-50{
-    width: 50%;
-    display: inline-block;
-}
-.width-25{
-    width: 25%;
-    display: inline-block;
-}
+
 .gap30{
     gap: 30px;
 }
@@ -82,7 +77,7 @@ h4{
 /* header */
 header{
     box-shadow: 0 1px 3px 0 rgb(0 0 0 / 5%);
-    position: fixed;
+    position: sticky;
     left: 0;
     right: 0;
     top: 0;
@@ -229,4 +224,102 @@ footer ul a:hover{
 .copy{
     color: #6F6F87;
     text-align: right;
+}
+
+ /* Small */
+@media (max-width: 768px) {
+    header .logo{
+        font-size: 14px;
+        margin-left: 3px;
+    }
+    button{
+        padding: 6px;
+    }
+    header .container{
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    header{
+        position: sticky;
+        display: flex;
+        overflow: hidden;
+        width: 100vw;
+    }
+    header ul li{
+        font-size: 12px;
+        padding: 5px 5px;
+    }
+    .s1 > .fx-row,.s2 > .fx-row,.s3 > .fx-row,.s4 > .fx-row{
+        display: inline;
+    }
+    .s1 img{
+        padding-top:30px;
+    }
+   .s1 h1{
+        font-size: 40px;
+    }
+    .cat,.item{
+        margin-top: 15px;
+        display: inline-block;
+    }
+    h2{
+        margin-top: 50px;
+        font-size: 32px;
+    }
+    .s2 .steps {
+        padding-left: 0;
+    }
+
+   .width-50{
+      width: 100%;
+  }
+  .width-25{
+      width: 100%;
+  }
+    footer >.fx-row{
+    flex-direction: column;
+  }
+}
+
+ /* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+   .width-50{
+      width: 100%;
+  }
+  .width-25{
+      width: 100%;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+  .width-50{
+      width: 100%;
+  }
+  .width-25{
+      width: 50%;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+  .width-50{
+    width: 50%;
+    display: inline-block;
+    }
+    .width-25{
+        width: 25%;
+        display: inline-block;
+    }
+  
 }
